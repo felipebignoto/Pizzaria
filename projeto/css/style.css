@@ -23,6 +23,51 @@ cores{
     box-sizing: border-box;
 }
 
+header{
+
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)) ,url(../_imagens/secao08-background-capa.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    border-top:5px solid #078c31;
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+    position: relative;
+}
+
+header div#chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+}
+
+header div#chamada h1{
+    color: #fff;
+    text-shadow: 4px 6px 10px #000;
+}
+
+header div#chamada h4{
+    font-size: 250%;
+    text-shadow: 4px 6px 10px #000;
+    margin-bottom: 55px;
+}
+
+header div#chamada a{
+    color: white;
+    text-decoration: none;
+    background:linear-gradient(rgba(07,140,49,55) 0%,rgba(6,89,2,35) 50%, rgba(6,89,2,35) 100%);
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 110%;
+}
+
 h1, h2, h3{
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
@@ -53,7 +98,6 @@ p, li, a{
 nav{
     width: 95%;
     height: 200px;
-    background-color: #404040;/*So para saber onde é*/
     margin: 10px auto;
 }
 
