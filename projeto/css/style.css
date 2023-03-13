@@ -1,0 +1,121 @@
+/*
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+
+cores{
+    verde escuro: #065902
+    verde claro: #078c31
+    amarelo: #f2b705
+    vermelho claro: #f03733
+    vermelho escuro: #d90404
+
+    cinza escuro: #404040
+    cinza claro: #f7f7f7
+}
+
+*/
+
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d90404;
+}
+
+h4,h5, h6{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #f2b705;
+}
+
+h1{
+    font-size: 600%;
+    font-weight: 200;
+}
+
+h2{
+    font-size: 400%;
+    font-weight: 200;
+}
+
+p, li, a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    width: 95%;
+    height: 200px;
+    background-color: #404040;/*So para saber onde é*/
+    margin: 10px auto;
+}
+
+div#logo{
+    background-image: url(../_imagens/secao08-logo-pizzaria-fontenelle.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+
+    margin-top: 70px;
+    height: 40px;
+}
+
+nav ul#esquerda{
+    float: left;
+}
+
+nav ul#direita{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 100px;
+    font-size: 80%;
+}
+
+nav ul li a#criar-conta{
+    border: 1px solid white;
+    padding: 9px 29px;
+}
+
+nav ul li a:hover{
+    background-color: #f2b705;
+    transition-duration: 0.6s;
+}
+
+nav ion-icon#icone-user{
+    width: 45px;
+    height: 45px;
+    color: white;
+    margin-top: -13px;
+    margin-left: 20px;
+
+}
+
+nav ion-icon#icone-user:hover{
+    color:#f2b705;
+    cursor: pointer;
+}
