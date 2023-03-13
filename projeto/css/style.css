@@ -23,6 +23,60 @@ cores{
     box-sizing: border-box;
 }
 
+h1, h2, h3{
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d90404;
+}
+
+h4,h5, h6{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #f2b705;
+}
+
+h1{
+    font-size: 600%;
+    font-weight: 200;
+}
+
+h2{
+    font-size: 400%;
+    font-weight: 200;
+}
+
+p, li, a{
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+}
+
+h2::after{
+    display: block;
+    background-color:  #078C31;
+    height: 5px;
+    width: 100px;
+    margin: 40px auto 30px;
+    content: " ";
+}
+
+h4{
+    font-size: 150%;
+    font-weight: 150;
+    padding: 20px 0 ;
+}
+
+p.destaque{
+    font-size: 130%;
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: center;
+    width:60% ;
+}
+
+/*---------*/
+/*--Header-*/
+/*---------*/
 header{
 
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)) ,url(../_imagens/secao08-background-capa.jpg);
@@ -66,33 +120,6 @@ header div#chamada a{
     border-radius: 50px;
     font-weight: 600;
     font-size: 110%;
-}
-
-h1, h2, h3{
-    font-family: 'Fredericka the Great', cursive;
-    text-align: center;
-    text-transform: uppercase;
-    color: #d90404;
-}
-
-h4,h5, h6{
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-    color: #f2b705;
-}
-
-h1{
-    font-size: 600%;
-    font-weight: 200;
-}
-
-h2{
-    font-size: 400%;
-    font-weight: 200;
-}
-
-p, li, a{
-    font-family: 'Open Sans', sans-serif;
 }
 
 nav{
@@ -162,4 +189,59 @@ nav ion-icon#icone-user{
 nav ion-icon#icone-user:hover{
     color:#f2b705;
     cursor: pointer;
+}
+
+
+/*--------------------*/
+/*--Domingo perfeito-*/
+/*-------------------*/
+section#domingo-perfeito{
+    width: 100%;
+    padding: 40px 0 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+div#domingo-perfeito-esquerda, div#domingo-perfeito-direita { 
+    position: relative;
+    width: 15%;
+    background-color: #f2b705;
+}
+
+div#domingo-perfeito-centro{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+div#pontos-chaves-mestre{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+div.pontos-chaves{
+
+    text-align: center;
+    width: 25%;
+}
+
+div.pontos-chaves h4{
+    color: #404040
+}
+
+div.pontos-chaves h4:after{
+    background-color: #078C31;
+    display: block;
+    height: 5px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content: " ";
 }
