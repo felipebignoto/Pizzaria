@@ -383,8 +383,9 @@ section#testemunho{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
+    
 }
 
 div#testemunho-mestre{
@@ -429,8 +430,9 @@ div#testemunho-esquerda ion-icon{
 }
 
 div#testemunhos{
-    width: 2680px;
     position: absolute;
+    width: 2680px;
+    
     left: 0;
 
 }
@@ -438,11 +440,12 @@ div#testemunhos{
 section#testemunho div#testemunho-centro div#testemunhos ul{
     display: inline-table;
     width: 300px;
-    background-color: #fff;
-    padding: 30px;
-    margin: 50px 15px;
+    background: #fff;
+    padding:30px;
+    margin:50px 15px;
     border-radius: 20px;
-    border: 1px slid #ccc;
+    border:1px solid #ccc;
+
     text-align: center;
 }
 
