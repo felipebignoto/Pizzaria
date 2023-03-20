@@ -48,3 +48,8 @@ $('div#testemunho-esquerda').click(function(){
 $('div.planos-bottom').click(function(){
     alert("clicou");
 })
+
+//links
+$('ion-icon#instagram').click(function(){
+    window.open("https://www.instagram.com/","_blank");
+})
