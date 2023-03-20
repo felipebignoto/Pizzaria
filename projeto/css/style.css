@@ -559,6 +559,8 @@ div.planos-bottom{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 2px 2px 3px #ccc;
+
+    cursor: pointer;
    
 }
 
@@ -577,3 +579,12 @@ section#plano-principal ul li{
     line-height: 2;
     text-decoration: none;
 }
+
+section#plano-principal div.planos-bottom p{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 35px;
+}
+

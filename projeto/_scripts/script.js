@@ -42,3 +42,9 @@ $('div#testemunho-esquerda').click(function(){
     $('div#testemunho-direita ion-icon').css('opacity',1);
     $('div#testemunho-direita ion-icon').css('cursor','pointer');
 })
+
+//planos
+
+$('div.planos-bottom').click(function(){
+    alert("clicou");
+})
