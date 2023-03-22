@@ -109,18 +109,26 @@ header div#chamada{
     transform: translate(-50%, -50%);
     text-align: center;
 
-
 }
 
 header div#chamada h1{
     color: #fff;
     text-shadow: 4px 6px 10px #000;
+
+    animation-name: HeaderH1-moverParaDireita ;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
 header div#chamada h4{
     font-size: 250%;
     text-shadow: 4px 6px 10px #000;
     margin-bottom: 55px;
+
+    animation-name: HeaderH4-moverParaEsquerda; 
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    
 }
 
 header div#chamada a{
@@ -131,6 +139,12 @@ header div#chamada a{
     border-radius: 50px;
     font-weight: 600;
     font-size: 110%;
+    display: inline-block;
+
+    animation-name: HeaderA-moverParaCima; 
+    animation-duration: 1s;
+    animation-fill-mode: 1s;
+    animation-timing-function: ease-out;
 }
 
 nav{
@@ -669,3 +683,5 @@ footer div#pizza-rodape{
     background-image: url(../_imagens/secao15-pizza-rodape.png);
 
 }
+
+
