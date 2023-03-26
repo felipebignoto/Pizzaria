@@ -167,3 +167,43 @@ $('footer').waypoint(function(direcao){
 },{
     offset: "500px;"
 })
+
+//nav
+$('header h1').waypoint(function(direcao){
+    if(direcao == 'down'){
+        $('nav').addClass('navEstatico');
+        $('nav div').addClass('logoEstatico');
+        $('nav ul').addClass('menuEstatico');
+        $('nav ul li a ').addClass('itemEstatico');
+        $('nav ion-icon ').addClass('iconeEstatico');
+    }else{
+        $('nav').removeClass('navEstatico');
+        $('nav div').removeClass('logoEstatico');
+        $('nav ul').removeClass('menuEstatico');
+        $('nav ul li a ').removeClass('itemEstatico');
+        $('nav ion-icon ').removeClass('iconeEstatico');
+    }
+},{
+    offset:'200px;'
+})
+
+//navegação
+$('nav div').click(function(){
+    $('html,body').animate({scrollTop:$('header').offset().top},1000);
+})
+
+$('nav ul li:eq(0)').click(function(){
+        $('html,body').animate({scrollTop:$('section#domingo-perfeito').offset().top},1000);
+})
+
+$('nav ul li:eq(1)').click(function(){
+    $('html,body').animate({scrollTop:$('section#pizza').offset().top},1000);
+})
+
+$('nav ul li:eq(2)').click(function(){
+    $('html,body').animate({scrollTop:$('section#testemunho').offset().top},1000);
+})
+
+$('nav ul li:eq(3)').click(function(){
+    $('html,body').animate({scrollTop:$('section#plano-principal').offset().top},1000);
+})
