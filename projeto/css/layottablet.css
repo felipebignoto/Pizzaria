@@ -1,0 +1,103 @@
+/*Tipografia*/
+p.destaque, section#pizza p.destaque,section#testemunho p.destaque{
+    width: 80%;
+}
+
+/*header*/
+nav{
+    width: 100%;
+    left: 0;
+    padding-right: 10px;
+}
+
+nav div{
+    width: 150px;
+    height: 130px;
+    background-position: center bottom;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 100px;
+    font-size: 80%;
+}
+
+.itemEstatico{
+    padding: 19px 10px;
+}
+
+.logoEstatico{
+    margin-left: 0px;
+
+}
+
+/*DOMINGO PERFEITO*/
+div#domingo-perfeito-esquerda{
+    display: none;
+
+}
+
+div#domingo-perfeito-direita{
+    display: none;
+}
+
+div#domingo-perfeito-centro{
+    width: 95%;
+}
+
+/*Pizza*/
+div#pizza-opcoes-mestre{
+    width: 95%;
+}
+
+/*Testemunhos*/
+section#testemunho{
+
+}
+
+div#testemunho-esquerda, div#testemunho-direita{
+    display: none;
+}
+
+/*transição*/
+div#transicao-testemunho-plano{
+    display: none;
+}
+
+div#testemunho-centro{
+    width: 680px;
+}
+
+/*planos*/
+
+div#planos-janela{
+    width: 100%;
+}
+
+div.planos{
+    margin: 80px 5px;
+}
+
+@media screen and (max-width: 940px){
+    div.planos{
+       width: 2220px;
+    }
+}
+
+/*footer*/
+footer div#mapa{
+    width: 45%;
+}
+
+footer div#info{
+    width: 45%;
+    margin-right: 35px;
+
+}
+
+footer div#pizza-rodape{
+    display: none;
+}
+
