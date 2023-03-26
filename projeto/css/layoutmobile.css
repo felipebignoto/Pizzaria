@@ -1,0 +1,76 @@
+/*Tipografia*/
+header div#chamada h1{
+    font-size: 350%;
+}
+
+header div#chamada h4{
+    font-size: 200%;
+    margin-bottom: 25px;
+}
+
+header div#chamada a{
+    border-radius: 0;
+    width: 95%;
+}
+h2{
+    font-size: 250%;
+}
+
+/*Header*/
+
+/*Domingo*/
+div#pontos-chaves-mestre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
+div.pontos-chaves{
+
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+div.pontos-chaves p{
+    font-size: 115%;
+    font-weight: 300;
+    line-height: 2em;
+}
+/*testemunhos*/
+div#testemunho-centro{
+    width: 340px;
+}
+
+section#testemunho div#testemunho-centro div#testemunhos ul p{
+  font-size: 115%;
+  font-weight: 300;
+}
+/*planos*/
+section#plano-principal{
+    height: inherit;
+}
+
+div#planos-janela{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.planos{
+    width: 290px;
+    margin: 60px;
+}
+
+/*footer*/
+footer div#mapa{
+    display: none;
+}
+
+footer div#info{
+    width: 95%;
+}
