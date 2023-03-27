@@ -74,3 +74,41 @@ footer div#mapa{
 footer div#info{
     width: 95%;
 }
+
+/*nav*/
+nav ul#esquerda, nav ul#direita{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    background-color: black;
+}
+
+nav ul#direita{
+    top: 194px;
+    
+}
+
+nav ul#icone-menu-mobile{
+    display: inline;
+    margin-right:20px ;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap ;
+    justify-content: left;
+}
+
+nav ul li a, nav ul li a#criar-conta, .itemEstatico, .icone-estatico{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0;
+    font-size: 80%;
+    
+}
+

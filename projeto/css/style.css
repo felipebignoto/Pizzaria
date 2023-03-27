@@ -185,6 +185,11 @@ nav ul#direita{
     float: right;
 }
 
+nav ul#icone-menu-mobile{
+    float: right;
+    display: none;
+}
+
 nav ul li{
     list-style: none;
 

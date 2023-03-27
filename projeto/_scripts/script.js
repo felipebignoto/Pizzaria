@@ -176,12 +176,16 @@ $('header h1').waypoint(function(direcao){
         $('nav ul').addClass('menuEstatico');
         $('nav ul li a ').addClass('itemEstatico');
         $('nav ion-icon ').addClass('iconeEstatico');
+        $('nav ul#icone-menu-mobile ion-icon').css('color','#404040');
+        $('nav ul#icone-menu-mobile').css('margin-top','15px');
     }else{
         $('nav').removeClass('navEstatico');
         $('nav div').removeClass('logoEstatico');
         $('nav ul').removeClass('menuEstatico');
         $('nav ul li a ').removeClass('itemEstatico');
         $('nav ion-icon ').removeClass('iconeEstatico');
+        $('nav ul#icone-menu-mobile ion-icon').css('color','white');
+        $('nav ul#icone-menu-mobile').css('margin-top','70px');
     }
 },{
     offset:'200px;'
@@ -189,21 +193,79 @@ $('header h1').waypoint(function(direcao){
 
 //navegação
 $('nav div').click(function(){
-    $('html,body').animate({scrollTop:$('header').offset().top},1000);
+    $('html,body').animate({scrollTop:$('header').offset().top},1000,function(){
+        if($(window).width() < 812){
+            escondeMenu();
+            controle = true;
+        }
+    });
 })
 
 $('nav ul li:eq(0)').click(function(){
-        $('html,body').animate({scrollTop:$('section#domingo-perfeito').offset().top},1000);
+    $('html,body').animate({scrollTop:$('section#domingo-perfeito').offset().top},1000,function(){
+        if($(window).width() < 812){
+            escondeMenu();
+            controle = true;
+        }
+    });
 })
 
 $('nav ul li:eq(1)').click(function(){
-    $('html,body').animate({scrollTop:$('section#pizza').offset().top},1000);
+    $('html,body').animate({scrollTop:$('section#pizza').offset().top},1000,function(){
+        if($(window).width() < 812){
+            escondeMenu();
+            controle = true;
+        }
+    });
 })
 
 $('nav ul li:eq(2)').click(function(){
-    $('html,body').animate({scrollTop:$('section#testemunho').offset().top},1000);
+    $('html,body').animate({scrollTop:$('section#testemunho').offset().top},1000,function(){
+        if($(window).width() < 812){
+            escondeMenu();
+            controle = true;
+        }
+    });
 })
 
 $('nav ul li:eq(3)').click(function(){
-    $('html,body').animate({scrollTop:$('section#plano-principal').offset().top},1000);
+    $('html,body').animate({scrollTop:$('section#plano-principal').offset().top},1000,function(){
+        if($(window).width() < 812){
+            escondeMenu();
+            controle = true;
+        }
+    });
+})
+
+//menu
+
+function mostraMenu(){
+    $('nav ul#esquerda').css('display','flex');
+    $('nav ul#direita').css('display','flex');
+}
+
+function escondeMenu(){
+    $('nav ul#esquerda').css('display','none');
+    $('nav ul#direita').css('display','none');
+}
+
+var controle = true;
+$('nav ul#icone-menu-mobile').click(function(){
+    if(controle == true){
+        mostraMenu();
+        controle = false;
+    }
+    else{
+        escondeMenu();
+        controle = true;
+    }
+})
+
+$(window).resize(function(){
+    if($(window).width() > 812){
+        mostraMenu();
+    }
+    else{
+        escondeMenu();
+    }
 })
