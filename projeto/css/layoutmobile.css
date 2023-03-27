@@ -10,7 +10,7 @@ header div#chamada h4{
 
 header div#chamada a{
     border-radius: 0;
-    width: 95%;
+    /*width: 95%;*/
 }
 h2{
     font-size: 250%;
@@ -24,12 +24,12 @@ div#pontos-chaves-mestre{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
 
 }
 
 div.pontos-chaves{
-
-    text-align: center;
+    
     width: 80%;
     margin-bottom: 40px;
 }
@@ -85,13 +85,14 @@ nav ul#esquerda, nav ul#direita{
 }
 
 nav ul#direita{
-    top: 194px;
+    top: 192px;
     
 }
 
 nav ul#icone-menu-mobile{
     display: inline;
     margin-right:20px ;
+    margin-top: 40px;
 }
 
 nav ul{
