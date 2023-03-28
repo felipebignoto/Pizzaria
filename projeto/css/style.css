@@ -677,6 +677,11 @@ footer{
     border-bottom: 10px solid #F03733;
 }
 
+footer div#mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+
 footer div#mapa{
     width: 35%;
     height: 390px;
