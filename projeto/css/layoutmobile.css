@@ -82,11 +82,17 @@ nav ul#esquerda, nav ul#direita{
     top: 40px;
     right: 30px;
     background-color: black;
+    width: 170px;
 }
 
 nav ul#direita{
     top: 192px;
-    
+    padding-top: 5px;
+    border-top: 1px solid white;
+}
+
+#criar-conta{
+    margin-bottom: 9px;
 }
 
 nav ul#icone-menu-mobile{
