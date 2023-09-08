@@ -42,12 +42,28 @@ $('div#testemunho-esquerda').click(function(){
 
 //planos----------------------------------------------------------
 $('div.planos-bottom').click(function(){
-    alert("clicou");
+    window.open("http://127.0.0.1:5500/projeto/index.html#","_blank");
 })
 
 //links-----------------------------------------------------------
 $('ion-icon#instagram').click(function(){
     window.open("https://www.instagram.com/","_blank");
+})
+
+$('ion-icon#youtube').click(function(){
+    window.open("https://www.youtube.com/","_blank");
+})
+
+$('ion-icon#whatsapp').click(function(){
+    window.open("https://www.whatsapp.com/?lang=pt_BR","_blank");
+})
+
+$('ion-icon#facebook').click(function(){
+    window.open("https://www.facebook.com/?locale=pt_BR","_blank");
+})
+
+$('ion-icon#twitter').click(function(){
+    window.open("https://twitter.com/?lang=pt-br","_blank");
 })
 
 //Codigos de animação----------------------------------------------
